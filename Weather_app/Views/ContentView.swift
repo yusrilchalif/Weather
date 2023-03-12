@@ -20,7 +20,8 @@ struct ContentView: View {
                      \(location.longitude)")
             } else {
                 if (locationManager.isLoading) {
-                    ProgressView()
+                    //ProgressView()
+                    LoadingView()
                 } else {
                     WelcomeView()
                         .environmentObject(locationManager)
